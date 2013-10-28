@@ -1,0 +1,140 @@
+
+/***** GENERAL STYLES *****/
+body.login { background: #eee url(../images/bgmain.png); }
+body.loggedin { background: #fcfcfc; }
+body.errorpage { background-color: #fcfcfc; }
+h1, h2, h3 { color: #283038; }
+
+/***** LOGIN PAGE *****/
+.loginbox { background: #ddd; box-shadow: 9px 3px 12px -5px; }
+.loginboxinner { 
+	background: #fcfcfc; border: 1px solid #ccc; -moz-box-shadow: inset 0 1px 0 #fff; 
+	-webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff;
+}
+.loginbox h1 { color: #333; text-shadow: 1px 1px #fff; }
+.loginbox label { color: #666; }
+.loginbox input { 
+	background: #f7f7f7; color: #666; -moz-box-shadow: inset 0 1px 2px #ddd; -webkit-box-shadow: inset 0 1px 2px #ddd; box-shadow: inset 0 1px 2px #ddd; 
+	outline: none; border: 1px solid #ddd;
+}
+.loginbox button { 
+	background: #eee url(../images/buttonbg.gray.png) repeat-x 0 0; color: #666; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; 
+	border: 1px solid #ccc;
+}
+.loginbox button.default { background: #eee url(../images/buttonbg.gray.png) repeat-x 0 0; color: #666; border: 1px solid #ccc; }
+.loginbox button.hover { background: #eee url(../images/buttonbg.gray.png) repeat-x 0 -45px; color: #333; }
+.loginbox button:active { background: #eee; color: #333; }
+.loginbox a { color: #666; }
+.loginbox a:hover { color: #333; }
+
+/***** HEADER STYLES *****/
+.header { 
+	background: #eee url(../images/headbg.gray.png) repeat-x top left; border: 1px solid #ccc; 
+	-moz-box-shadow: 1px 1px 3px #eee; -webkit-box-shadow: 1px 1px 3px #eee; box-shadow: 1px 1px 3px #eee; 
+}
+.headercolumn { border-right: 1px solid #ccc; border-left: 1px solid #fff; } 
+.searchbox input { 
+	background: #fcfcfc; border: 1px solid #ccc; color: #666;
+	-moz-box-shadow: inset 0 1px 1px #ccc; -webkit-box-shadow: inset 0 1px 1px #ccc; box-shadow: 0 1px 0 #fcfcfc;
+}
+.headright .userinfo { 
+	border: 1px solid #ccc; color: #666; background: #fcfcfc url(../images/menudroparrow.png) no-repeat right 0px; 
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+.headright .userinfo:hover { border: 1px solid #ccc; background-color: #eee; }
+.headright .userinfodrop { 
+	background: #fff url(../images/arrow2.png) no-repeat right -87px; color: #333; border: 1px solid #ccc; height: 29px; 
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border-bottom: 0;
+}
+.headright .userinfodrop:hover { background-color: #fff; color: #333; border: 1px solid #ccc; border-bottom: 0; }
+.headright .notiactive { border: 1px solid #ccc; border-bottom: 0; }
+.userdrop { border: 1px solid #ccc; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; width: 149px !important; }
+.notibox { border: 1px solid #ccc; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; top: 35px; }
+
+.userinfomenu .userinfo { 
+	display: inline-block; border: 1px solid #ccc; color: #666; 
+	background: #fcfcfc url(../images/menudroparrow.png) no-repeat right 0; position: relative;
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+.userinfomenu .userinfo:hover { text-decoration: none; border: 1px solid #ccc; background-color: #eee; }
+.userinfomenu .userinfo span { display: inline-block; padding: 0 10px; }
+
+.userinfomenu .userinfodrop { 
+	background: #fff url(../images/arrow2.png) no-repeat right -87px; color: #333; z-index: 20; border: 1px solid #ccc; 
+	border-bottom: 0; height: 29px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+.userinfomenu .userinfodrop:hover { background-color: #fff; color: #333; border: 1px solid #ccc; border-bottom: 0; }
+
+
+/***** LEFT MENU STYLES *****/
+.leftmenu ul li.current a { background-color: #e7e7e7; border-color: #ddd; color: #666; border-top: 0; }
+.leftmenu ul li:first-child a { border-top: 1px solid #ddd; }
+.leftmenu ul li.current a { -moz-box-shadow: inset 0 1px 0 #f7f7f7; -webkit-box-shadow: inset 0 1px 0 #f7f7f7; box-shadow: inset 0 1px 0 #f7f7f7; }
+.leftmenu ul li.current a span { background-color: #f7f7f7; border-left: 1px solid #ddd; }
+.leftmenu ul li.current a span { -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff; }
+.leftmenu ul li.current a.active { background-color: #e7e7e7; border-color #ddd; }
+.leftmenu ul li.current a.active span { background: #f7f7f7 url(../images/menudroparrow.png) no-repeat right 0; border-left: 1px solid #ddd; }
+.leftmenu ul li.current a.menudrop:hover span { background: #eee url(../images/menudroparrow.png) no-repeat right 0; }
+.leftmenu ul li.current ul li a { border-bottom: 1px solid #ddd; }
+.leftmenu ul li.current ul li a:hover span { background: #eee; }
+
+/***** WIDGET LIST *****/
+/***** dashboard.html *****/
+.widgetlist li a.default { background-color: #ccc; }
+.widgetlist li a.hover { background-color: #666; }
+
+/***** WIDGET BOX *****/
+.widgetbox .title { background-color: #eee; border: 1px solid #ddd; }
+.widgetbox .title h2 { -moz-box-shadow: inset 0 1px 0 #fcfcfc; -webkit-box-shadow: inset 0 1px 0 #fcfcfc; box-shadow: inset 0 1px 0 #fcfcfc; }
+.widgetbox .title h2 span { background-color: #f7f7f7; border-left: 1px solid #ddd; color: #666; text-shadow: 1px 1px #fff; }
+.widgetbox .title h2 span { -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff; }
+.contenttitle { background-color: #eee; border: 1px solid #ddd; }
+.contenttitle h2 { -moz-box-shadow: inset 0 1px 0 #f7f7f7; -webkit-box-shadow: inset 0 1px 0 #f7f7f7; box-shadow: inset 0 1px 0 #f7f7f7; }
+.contenttitle h2 span { background-color: #f7f7f7; border-left: 1px solid #ddd; color: #666; text-shadow: 1px 1px #fff; }
+.contenttitle h2 span { -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff; }
+
+/***** FORM STYLES *****/
+.stdform button { background-color: #ddd; color: #666; border: 1px solid #ccc; }
+.stdform button { -moz-box-shadow: inset 0 1px 0 #f7f7f7; -webkit-box-shadow: inset 0 1px 0 #f7f7f7; box-shadow: inset 0 1px 0 #f7f7f7; }
+.stdform button:hover { background-color: #ccc; color: #333; border: 1px solid #bbb; }
+
+/***** CALENDARD STYLES *****/
+.ui-datepicker-inline .ui-datepicker-calendar td.ui-datepicker-today a { background-color: #ccc; }
+
+/***** MAIN CONTENT STYLES *****/
+.maintabmenu li.current a { color: #3b4650; }
+
+/***** TABLE STYLES *****/
+.dataTables_paginate .paginate_active { background-color: #283038; }
+
+/***** ELEMENT STYLES *****/
+.pagination li a.current { background-color: #666; color: #fff; border: 1px solid #444; }
+
+/***** WIZARD STYLES *****/
+.actionBar a { background-color: #333; }
+.actionBar a:hover { background-color: #283038; }
+.wizard .hormenu li a.selected h2, .wizard .hormenu li a.selected span.label { color: #3b4650; }
+.verwizard .verticalmenu a.selected { background-color: #333; }
+.verwizard .verticalmenu a.done { background-color: #444; }
+
+/***** ERROR PAGE *****/
+.pageErrorTitle { color: #666; text-shadow: 1px 1px #fff; }
+.errorWrapper span { color: #666; text-shadow: 1px 1px #fff; }
+.errorWrapper a.default { color: #222; background: #ccc; }
+.errorWrapper a.hover { background: #999; color: #fff; }
+
+
+/***** CUSTOM STYLES *****/
+div.wysiwyg { border-top: 0; }
+
+/***** AUTO COMPLETE *****/
+.ui-menu { background: #fcfcfc; border: 1px solid #ddd; border-top: 0; }
+.ui-menu .ui-menu-item a { border-bottom: 1px solid #eee; }
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active { background: #ddd; color: #666; }
+
+@media screen and (max-width: 580px) {
+	.headerinner { border-bottom: 1px solid #ccc; }
+	.headerinner2 { border-top: 1px solid #eee; }
+	.headerinner2 .headercolumn { border-left: 0; border-right: 0; }
+}

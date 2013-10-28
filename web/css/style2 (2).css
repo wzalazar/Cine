@@ -1,0 +1,439 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+    color: #888888;
+}
+#bodychild {
+    border-top: 6px solid #343434;
+}
+#outerheader {
+    background: url("../images/pattern.png") repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #FFFFFF;
+}
+#top {
+    background: url("../images/opacity-logomenu.png") repeat-x scroll left bottom transparent;
+    border-bottom: 1px solid #050505;
+    border-top: 1px solid #383838;
+}
+a, a:visited, .colortext, .colortext a, .colortext a:visited {
+    color: #444444;
+}
+a:hover, a.colortext:hover, .colortext a:hover {
+    color: #777777;
+}
+.generaltext {
+    color: #888888;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+}
+.pagetitle {
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px #000000;
+}
+.pagedesc {
+    color: #CCCCCC;
+}
+#logo h1 a, #logo h1 a:visited {
+    color: #FFFFFF;
+}
+#logo .desc {
+    color: #FFFFFF;
+}
+.logo-light {
+    background: url("../images/light-logo.png") no-repeat scroll 0 0 transparent;
+}
+.header-bglight {
+    background: url("../images/light.png") no-repeat scroll center top transparent;
+}
+.sf-menu a, .sf-menu a:visited {
+    color: #E9E9E9;
+}
+#topnav li a:hover, #topnav .current_page_item > a, #topnav .current_page_item > a:hover, #topnav .current_page_parent > a, #topnav .current_page_parent > a:hover, #topnav .current-menu-parent > a, #topnav .current-menu-parent > a:hover, #topnav .current-menu-item > a, #topnav .current-menu-item > a:hover {
+    color: #ABABAB;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul, #topnav li li a, .sf-menu li li a, .sf-menu li li a:visited {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    color: #E9E9E9;
+}
+.sf-menu li li {
+    border-bottom: 1px solid #151515;
+}
+.sf-menu ul li a:hover, #topnav li li a.current {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+}
+#topnav li li a:hover, #topnav li li.current_page_item > a, #topnav li li .current_page_item > a:hover, #topnav li li.current_page_parent > a, #topnav li li.current_page_parent > a:hover, #topnav li li.current-menu-parent > a, #topnav li li.current-menu-parent > a:hover, #topnav li li.current-menu-item > a, #topnav li li.current-menu-item > a:hover {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+}
+.flex-caption {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+}
+.flex-caption h1, .flex-caption a {
+    color: #FFFFFF;
+}
+.flex-control-nav a {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.flex-control-nav li a:hover, .flex-control-nav li a.active {
+    background: none repeat scroll 0 0 #000000;
+}
+#outermain {
+    background: url("../images/shadow-content-top.png") repeat-x scroll left top transparent;
+}
+.highlight-container {
+    background: url("../images/line.png") repeat-x scroll left top transparent;
+}
+.highlight-content {
+    background: url("../images/line.png") repeat-x scroll left bottom transparent;
+}
+.highlight-content h1 {
+    color: #333333;
+}
+.boxed-content {
+    background: none repeat scroll 0 0 #FAFAFA;
+}
+input[type="text"], textarea, input[type="password"], select {
+    border: 1px solid #ECECEC;
+    color: #888888;
+}
+hr {
+    background-color: #EFEFEF;
+    color: #EFEFEF;
+}
+.separator.line {
+    background: url("../images/line.png") repeat-x scroll left center transparent;
+}
+.button, .button:visited, input[type="submit"], .more-link, .more-link:visited {
+    background: -moz-linear-gradient(center top , #585858, #3E3E3E) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.button:hover, input[type="submit"]:hover, .more-link:hover {
+    background: -moz-linear-gradient(center top , #3E3E3E, #585858) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.dropcap1 {
+    color: #888888;
+}
+.dropcap2 {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #D2D2D2;
+    color: #888888;
+}
+.dropcap3 {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #D2D2D2;
+    color: #888888;
+}
+.highlight1 {
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
+}
+.highlight2 {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #F7F7F7;
+}
+.highlight3 {
+    border-bottom: 1px dashed #777777;
+}
+code {
+    border-left: 4px solid #EAEAEA;
+}
+ul.tabs li a, ul.tabs li a:visited {
+    color: #444444;
+}
+ul.tabs {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top , #FBFBFB, #F6F6F6) repeat scroll 0 0 transparent;
+    border-color: #DEDEDE;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+}
+ul.tabs li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DEDEDE;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+}
+ul.tabs li:last-child {
+    border-right: 1px solid #DEDEDE;
+}
+ul.tabs li.active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+html ul.tabs li.active a {
+    color: #444444;
+}
+#tab-body {
+    border: 1px solid #E6E6E6;
+}
+h2.trigger {
+    background: -moz-linear-gradient(center top , #FBFBFB, #F6F6F6) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #D2D2D2;
+}
+h2.active {
+    background: -moz-linear-gradient(center top , #F6F6F6, #FBFBFB) repeat scroll 0 0 transparent;
+}
+h2.trigger span {
+    color: #888888;
+}
+h2.active span {
+    color: #444444;
+}
+h2.trigger a:hover {
+    color: #444444;
+}
+h2.trigger span {
+    background: url("../images/arrow-left.png") no-repeat scroll 17px 0 transparent;
+}
+h2.active span {
+    background: url("../images/arrow-down.png") no-repeat scroll 17px 0 transparent;
+}
+ul.ts-accordion h2 {
+    background: -moz-linear-gradient(center top , #FBFBFB, #F6F6F6) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #D2D2D2;
+    color: #888888;
+}
+ul.ts-accordion h2.active {
+    background: -moz-linear-gradient(center top , #F6F6F6, #FBFBFB) repeat scroll 0 0 transparent;
+    color: #444444;
+}
+h2.accordion-title span.accordion-icon {
+    background: url("../images/arrow-left.png") no-repeat scroll 0 0 transparent;
+}
+h2.accordion-title.active span.accordion-icon {
+    background: url("../images/arrow-down.png") no-repeat scroll 0 0 transparent;
+}
+th {
+    border-bottom: 1px solid #E6E6E6;
+}
+table {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #E6E6E6 #E6E6E6 -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+}
+tr td {
+    border-bottom: 1px solid #E6E6E6;
+}
+#sidebar th {
+    border-bottom: 1px solid #F1F1F1;
+}
+#sidebar table {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #F1F1F1 #F1F1F1 -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+}
+#sidebar tr td {
+    border-bottom: 1px solid #F1F1F1;
+}
+#footersidebar th {
+    border-bottom: 1px solid #272727;
+}
+#footersidebar table {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #272727 #272727 -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+}
+#footersidebar tr td {
+    border-bottom: 1px solid #272727;
+}
+.testi-desc {
+    color: #444444;
+}
+.post {
+    background: url("../images/line.png") repeat-x scroll left bottom transparent;
+}
+.posttitle a, .posttitle a:visited {
+    color: #444444;
+}
+.posttitle a:hover {
+    color: #777777;
+}
+.tdate, .reply a, .reply a:visited {
+    color: #969696;
+}
+.comment-body {
+    border-bottom: 1px dotted #D2D2D2;
+}
+.fn {
+    color: #444444;
+}
+
+.entry-date {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #D2D2D2;
+}
+.entry-utility {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #F1F1F1;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0;
+    color: #BBBBBB;
+}
+.entry-utility a, .entry-utility a:visited {
+    color: #888888;
+}
+.entry-utility a:hover {
+    color: #BBBBBB;
+}
+#entry-author-info {
+    background: url("../images/line.png") repeat-x scroll left bottom transparent;
+}
+#sidebar .widget-title {
+    background: url("../images/line.png") repeat-x scroll left bottom transparent;
+}
+.wp-pagenavi a, .wp-pagenavi a:visited, .wp-pagenavi span.extend {
+    background: -moz-linear-gradient(center top , #585858, #3E3E3E) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.wp-pagenavi span.current, .wp-pagenavi a:hover {
+    background: -moz-linear-gradient(center top , #3E3E3E, #585858) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.rp-shortcode li {
+    border-bottom: 1px dotted #D2D2D2;
+}
+.rp-shortcode li h3 {
+    color: #444444;
+}
+.rp-shortcode li .smalldate {
+    color: #888888;
+}
+#filter li {
+    background: -moz-linear-gradient(center top , #FBFBFB, #ECECEC) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #D2D2D2;
+    border-right: 1px solid #FFFFFF;
+}
+#filter li.selected-1 {
+    background: -moz-linear-gradient(center top , #FBFBFB, #F6F6F6) repeat scroll 0 0 transparent;
+}
+#filter li a, #filter li a:visited {
+    color: #777777;
+}
+#filter li a:hover, #filter li.selected-1 a {
+    color: #777777;
+}
+.ts-display-pf-text h2 a, .ts-display-pf-text h2 a:visited {
+    color: #333333;
+}
+.ts-display-pf-text h2 a:hover {
+    color: #646464;
+}
+.ts-display-pf-text h2 {
+    border-bottom: 1px solid #F6F6F6;
+}
+#sidebar li li a {
+    color: #888888;
+}
+#sidebar li li a:hover, #sidebar li li a.current {
+    color: #444444;
+}
+.tagcloud a {
+    background: none repeat scroll 0 0 #272727;
+}
+.tagcloud a:hover {
+    background: none repeat scroll 0 0 #3C3C3C;
+}
+#sidebar .tagcloud a {
+    background: none repeat scroll 0 0 #F1F1F1;
+    color: #888888;
+}
+#sidebar .tagcloud a:hover {
+    background: none repeat scroll 0 0 #3C3C3C;
+}
+#searchform {
+    border-top: 1px solid #DADADA;
+}
+#searchform .searcharea {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-color: #EFEFEF;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 0;
+}
+input.searchbutton {
+    background: url("../images/search-icon.png") no-repeat scroll 0 0 transparent !important;
+}
+input.searchbutton:hover {
+}
+#sidebar .ts-recent-post-widget li h3 a, #sidebar .ts-recent-post-widget li h3 a:hover, #sidebar .ts-recent-post-widget li .smalldate a, #sidebar .ts-recent-post-widget li .smalldate a:hover {
+    color: #444444;
+}
+#sidebar .ts-recent-post-widget li h3 a:hover, #sidebar .ts-recent-post-widget li .smalldate a:hover {
+    color: #777777;
+}
+#footersection {
+    background: url("../images/pattern.png") repeat scroll 0 0 transparent;
+    border-top: 1px solid #FFFFFF;
+    color: #888888;
+}
+#outerfootersidebar {
+    border-bottom: 1px solid #000000;
+}
+#footersidebar .widget-title {
+    border-bottom: 1px solid #272727;
+    color: #FFFFFF;
+}
+#footersidebar li a, #footersidebar li a:visited {
+    color: #888888;
+}
+#footersidebar li a:hover, #footersidebar li a.colortext:hover {
+    color: #BBBBBB;
+}
+#footersidebar .ts-recent-post-widget li h3 a, #footersidebar .ts-recent-post-widget li h3 a:visited {
+    color: #DDDDDD;
+}
+#footersidebar .ts-recent-post-widget li h3 a:hover {
+    color: #777777;
+}
+#outerfooter {
+    background: url("../images/opacity-footer.png") repeat-x scroll left top transparent;
+    border-top: 1px solid #1F1F1F;
+}
+#footer {
+    color: #BBBBBB;
+}
+#footer a, #footer a:visited {
+    color: #BBBBBB;
+}
+#footer a:hover {
+    color: #CDCDCD;
+}
+#footer-light {
+    background: url("../images/light-footer.png") no-repeat scroll 0 0 transparent;
+}

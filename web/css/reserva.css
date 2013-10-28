@@ -1,0 +1,3249 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@import "plugins/jquery.ui.css";
+@import "plugins/fullcalendar.css";
+@import "plugins/jquery.wysiwyg.css";
+@import "plugins/colorbox.css";
+@import "plugins/colorpicker.css";
+@import "plugins/jquery.jgrowl.css";
+@import "plugins/jquery.alerts.css";
+@import "plugins/jquery.ui.autocomplete.css";
+@font-face {
+    font-family: "BebasNeueRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../font/BebasNeue-webfont.woff") format("woff"), url("../font/BebasNeue-webfont.ttf") format("truetype"), url("../font/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+}
+
+
+
+
+
+
+input, select, textarea {
+    
+    font-size: 12px;
+    outline: medium none;
+}
+small, .small {
+    
+    font-size: 11px;
+}
+
+
+.radius2 {
+    border-radius: 2px 2px 2px 2px;
+}
+.radius3 {
+    border-radius: 3px 3px 3px 3px;
+}
+.radius25 {
+    border-radius: 25px 25px 25px 25px;
+}
+.radius50 {
+    border-radius: 50px 50px 50px 50px;
+}
+.bebas {
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+}
+.width1 {
+    width: 1px;
+}
+button, input, select, textarea {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+.loginbox {
+    background: none repeat scroll 0 0 #444444;
+    margin: 8% auto 0;
+    padding: 10px;
+    position: relative;
+    width: 400px;
+}
+.loginboxinner {
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #333333;
+    box-shadow: 0 1px 0 #444444 inset;
+    padding: 20px;
+    position: relative;
+}
+.loginheader {
+    height: 60px;
+}
+.loginform {
+    margin-top: 20px;
+}
+.loginbox h1 {
+    color: #555555;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.loginbox .logo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.loginbox p {
+    margin: 10px 0 15px;
+}
+.loginbox label {
+    color: #CCCCCC;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.loginbox input {
+    background: url("../images/loginputbg.png") repeat-x scroll left top #282828;
+    border: 0 none;
+    box-shadow: 0 1px 0 #444444;
+    color: #CCCCCC;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    margin-top: 8px;
+    outline: medium none;
+    padding: 12px 10px;
+    width: 340px;
+}
+.loginbox button {
+    background: none repeat scroll 0 0 #999999;
+    border: 0 none;
+    box-shadow: 1px 1px 3px #222222;
+    color: #333333;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    width: 360px;
+}
+.loginbox button.default {
+    background: none repeat scroll 0 0 #999999;
+    color: #333333;
+}
+.loginbox button.hover {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #000000;
+}
+.loginbox button:active {
+    background: none repeat scroll 0 0 #111111;
+    color: #FFFFFF;
+}
+.loginerror {
+    background: none repeat scroll 0 0 #FBE3E3;
+    color: #990000;
+    display: none;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.loginerror {
+    border-radius: 2px 2px 2px 2px;
+}
+.loginerror p {
+    margin: 10px 0;
+}
+.header {
+    background: url("../images/headbg.png") repeat-x scroll left top #333333;
+    border: 1px solid #222222;
+    box-shadow: 1px 1px 3px #666666;
+    margin: 10px;
+    position: relative;
+}
+.headerinner {
+    padding: 10px;
+}
+.headercolumn {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #272727;
+    float: left;
+    height: 33px;
+    padding: 12px 10px;
+    position: relative;
+}
+.headleft {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.headleft .headercolumn {
+    border-color: #2C2C2C #2C2C2C #2C2C2C -moz-use-text-color;
+    border-left: 0 none;
+}
+.headleft .headercolumn:first-child {
+    border-left: 1px solid #2C2C2C;
+    margin-left: 260px;
+}
+.headlinkwrap {
+    width: 38px;
+}
+.headlink {
+    left: 0;
+    padding: 19px 15px;
+    position: absolute;
+    top: 0;
+}
+.headlink:hover {
+    background: none repeat scroll 0 0 #373737;
+}
+.searchbox {
+    display: inline-block;
+}
+.searchbox input {
+    background: none repeat scroll 0 0 #222222;
+    border: 0 none;
+    color: #999999;
+    font-size: 13px;
+    font-style: italic;
+    padding: 9px 8px;
+    width: 200px;
+}
+.searchbox input {
+}
+.searchbox input:focus {
+    font-style: normal;
+}
+.headright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.headright img {
+    vertical-align: middle;
+}
+.headright .noalert {
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 10px 9px;
+}
+.headright .noalert:hover {
+    text-decoration: none;
+}
+.headright .notialert {
+    background: none repeat scroll 0 0 #CC0000;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 10px 9px;
+}
+.headright .notialert:hover {
+    text-decoration: none;
+}
+.headright .userinfo {
+    background: url("../images/menudroparrow.png") no-repeat scroll right -31px #373737;
+    border: 1px solid #272727;
+    box-shadow: 0 1px 0 #444444;
+    color: #CCCCCC;
+    display: inline-block;
+    padding: 3px 25px 3px 3px;
+    position: relative;
+    vertical-align: top;
+}
+.headright .userinfo:hover {
+    background-color: #3C3C3C;
+    text-decoration: none;
+}
+.headright .userinfo span {
+    display: inline-block;
+    padding: 0 10px;
+}
+.headright .userinfodrop {
+    background: url("../images/arrow2.png") no-repeat scroll right -87px #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+    color: #333333;
+    height: 29px;
+    z-index: 20;
+}
+.headright .userinfodrop:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #333333;
+}
+.headright .headercolumn:last-child {
+    border-right: 0 none;
+}
+.headright .headercolumn:first-child {
+    border-left: 0 none;
+}
+.userdrop {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 2px 0 2px 2px;
+    box-shadow: 0 0 2px #333333;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    z-index: 10;
+}
+.userdrop ul {
+    list-style: none outside none;
+    margin: 5px 0;
+}
+.userdrop ul li {
+    display: block;
+}
+.userdrop ul li a {
+    color: #666666;
+    display: block;
+    padding: 8px 10px;
+}
+.userdrop ul li a:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    text-decoration: none;
+}
+.headerinner2 {
+    border-top: 1px solid #444444;
+    height: 57px;
+    position: relative;
+}
+.userinfomenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.userinfomenu img {
+    vertical-align: middle;
+}
+.userinfomenu .userinfo {
+    background: url("../images/menudroparrow.png") no-repeat scroll right -31px #373737;
+    border: 1px solid #272727;
+    box-shadow: 0 1px 0 #444444;
+    color: #CCCCCC;
+    display: inline-block;
+    padding: 3px 25px 3px 3px;
+    position: relative;
+    vertical-align: top;
+}
+.userinfomenu .userinfo:hover {
+    background-color: #3C3C3C;
+    text-decoration: none;
+}
+.userinfomenu .userinfo span {
+    display: inline-block;
+    padding: 0 10px;
+}
+.userinfomenu .userinfodrop {
+    background: url("../images/arrow2.png") no-repeat scroll right -87px #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+    color: #333333;
+    height: 29px;
+    z-index: 20;
+}
+.userinfomenu .userinfodrop:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #333333;
+}
+.headright .notiactive {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 2px 2px 0 0;
+    color: #333333;
+    height: 18px;
+    position: relative;
+    z-index: 20;
+}
+.notiwrapper {
+    display: inline-block;
+    min-height: 50px;
+    position: relative;
+}
+.notibox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px 0 2px 2px;
+    box-shadow: 0 0 2px #333333;
+    display: none;
+    line-height: 21px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 300px;
+    z-index: 10;
+}
+.notibox .loader {
+    color: #666666;
+    display: none;
+    font-size: 11px;
+    font-style: italic;
+    padding: 5px 0;
+}
+.noticontent {
+    margin: 5px 0;
+}
+.tabmenu {
+    list-style: none outside none;
+}
+.tabmenu li {
+    border-bottom: 1px solid #DDDDDD;
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+.tabmenu li a {
+    color: #666666;
+    display: block;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-align: center;
+}
+.tabmenu li a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+.tabmenu li.current a {
+    background: none repeat scroll 0 0 #DDDDDD;
+    color: #333333;
+}
+.msglist {
+    font-size: 11px;
+    line-height: 16px;
+    list-style: none outside none;
+}
+.msglist li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #EEEEEE;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    display: block;
+}
+.msglist li:first-child {
+    border-top: 1px solid #DDDDDD;
+}
+.msglist li.message {
+    background-image: url("../images/icons/default/mail.png");
+}
+.msglist li.user {
+    background-image: url("../images/icons/default/users.png");
+}
+.msglist li.call {
+    background-image: url("../images/icons/default/call.png");
+}
+.msglist li.calendar {
+    background-image: url("../images/icons/default/calendar.png");
+}
+.msglist li.settings {
+    background-image: url("../images/icons/default/settings.png");
+}
+.msglist li.new {
+    background-color: #FFFFFF;
+}
+.msglist li .msg {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-left: 1px solid #DDDDDD;
+    margin-left: 35px;
+    padding: 8px 10px;
+}
+.msglist li.new .msg {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.msglist li a.subject {
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    margin: 2px 0;
+}
+.msglist li a.subject:hover {
+    color: #666666;
+    text-decoration: none;
+}
+.msgmore a {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 0;
+    text-align: center;
+}
+.msgmore a:hover {
+    background: none repeat scroll 0 0 #BBBBBB;
+    color: #333333;
+    text-decoration: none;
+}
+.one_half {
+    width: 48.5%;
+}
+.one_third {
+    width: 31.16%;
+}
+.two_third {
+    width: 65.83%;
+}
+.one_fourth {
+    width: 22.5%;
+}
+.three_fourth {
+    width: 74.5%;
+}
+.one_fifth {
+    width: 17.3%;
+}
+.two_fifth {
+    width: 38.1%;
+}
+.three_fifth {
+    width: 58.9%;
+}
+.four_fifth {
+    width: 67.7%;
+}
+.one_sixth {
+    width: 13.83%;
+}
+.five_sixth {
+    width: 83.17%;
+}
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+    float: left;
+    margin-right: 3%;
+    position: relative;
+}
+.last {
+    clear: right;
+    margin-right: 0 !important;
+}
+.mainwrapper {
+    margin: 10px;
+    position: relative;
+}
+.mainleft {
+    left: 0;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+.leftmenu {
+    box-shadow: 1px 1px 2px #EEEEEE;
+}
+.leftmenu ul {
+    list-style: none outside none;
+}
+.leftmenu ul li {
+    display: block;
+    position: relative;
+}
+.leftmenu ul li a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/icons/default/sprites.png") no-repeat scroll 8px center #FCFCFC;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    color: #666666;
+    display: block;
+    font-weight: bold;
+    padding-left: 35px;
+}
+.leftmenu ul li a:hover {
+    background-color: #EEEEEE;
+    color: #333333;
+    text-decoration: none;
+}
+.leftmenu ul li:first-child a {
+    border-radius: 2px 2px 0 0;
+    border-top: 1px solid #DDDDDD;
+}
+.leftmenu ul li:last-child a {
+    border-radius: 0 0 2px 2px;
+}
+.leftmenu ul li a span {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #EEEEEE;
+    display: block;
+    padding: 8px 10px;
+}
+.leftmenu ul li a:hover span {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-left: 1px solid #DDDDDD;
+}
+.leftmenu ul li.current a {
+    border: 1px solid #222222;
+    color: #FFFFFF;
+}
+.leftmenu > ul > li.current > a {
+    background-color: #222222;
+}
+.leftmenu ul li.current a span {
+    background: none repeat scroll 0 0 #333333;
+    border-left: 1px solid #444444;
+}
+.leftmenu ul li a.menudrop:hover span {
+    background: url("../images/menudroparrow.png") no-repeat scroll right 0 #F7F7F7;
+}
+.leftmenu ul li.current a.menudrop:hover span {
+    background: url("../images/menudroparrow.png") no-repeat scroll right -31px #333333;
+}
+.leftmenu ul li a.active {
+    background-color: #EEEEEE;
+}
+.leftmenu ul li a.active span {
+    background: url("../images/menudroparrow.png") no-repeat scroll right 0 #F7F7F7;
+    border-left: 1px solid #DDDDDD;
+}
+.leftmenu ul li.current a.active {
+    background-color: #222222;
+}
+.leftmenu ul li.current a.active span {
+    background: url("../images/menudroparrow.png") no-repeat scroll right -31px #333333;
+    border-left: 1px solid #444444;
+}
+.leftmenu ul li a em {
+    font-style: normal;
+}
+.leftmenu ul li a.dashboard {
+    background-position: -154px -443px;
+}
+.leftmenu ul li a.widgets {
+    background-position: -190px -443px;
+}
+.leftmenu ul li a.tables {
+    background-position: -82px -480px;
+}
+.leftmenu ul li a.elements {
+    background-position: -10px -443px;
+}
+.leftmenu ul li a.charts {
+    background-position: -119px -480px;
+}
+.leftmenu ul li a.media {
+    background-position: -47px -408px;
+}
+.leftmenu ul li a.form {
+    background-position: -154px -262px;
+}
+.leftmenu ul li a.editor {
+    background-position: -154px -262px;
+}
+.leftmenu ul li a.grid {
+    background-position: -190px -443px;
+}
+.leftmenu ul li a.calendar {
+    background-position: -82px -155px;
+}
+.leftmenu ul li a.buttons {
+    background-position: -47px -443px;
+}
+.leftmenu ul li a.chat {
+    background-position: -119px -299px;
+}
+.leftmenu ul li a.contacts {
+    background-position: -82px -227px;
+}
+.leftmenu ul li a.users {
+    background-position: -82px -191px;
+}
+.leftmenu ul li a.error {
+    background-position: -119px -119px;
+}
+.leftmenu ul li .menutip {
+    border-radius: 0 2px 2px 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 38px;
+    margin-left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.leftmenu ul li .menutip ul {
+    width: 200px;
+}
+.leftmenu ul li .menutip span.subtitle {
+    background: url("../images/blacktrans.png") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 9px 10px;
+}
+.leftmenu ul li .menutip ul {
+    margin: 0;
+}
+.leftmenu ul li .menutip ul li {
+    display: block;
+}
+.leftmenu ul li .menutip ul li a {
+    color: #333333;
+    width: auto;
+}
+.leftmenu ul li .menutip ul li a span {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+}
+.leftmenu ul li ul {
+    display: none;
+    margin: 0 0 10px 36px;
+}
+.leftmenu ul li ul li:first-child a {
+    border-radius: 0 0 0 0;
+    border-top: 0 none;
+}
+.leftmenu ul li ul li:last-child a {
+    border-radius: 0 0 0 0;
+}
+.leftmenu ul li ul li a {
+    background: none repeat scroll 0 0 #F7F7F7;
+    padding-left: 0;
+}
+.leftmenu ul li ul li a span {
+    border-left: 0 none;
+}
+.leftmenu ul li ul li a:hover span {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-left: 0 none;
+}
+.leftmenu ul li.current ul {
+    display: block;
+}
+.leftmenu ul li.current ul li a {
+    border-bottom: 1px solid #272727;
+    border-top: 0 none;
+}
+.leftmenu ul li.current ul li a span {
+    border-left: 0 none;
+}
+.leftmenu ul li.current ul li a:hover span {
+    background: none repeat scroll 0 0 #2E2E2E;
+}
+.leftmenu ul li.current .menutip span.subtitle {
+    border: 0 none;
+    padding-bottom: 10px;
+}
+.leftmenu ul li.current .menutip ul li {
+    border: 0 none;
+}
+.leftmenu ul li.current .menutip ul li a {
+    border-color: #DDDDDD;
+}
+.leftmenu ul li.current .menutip ul li a span {
+    border: 0 none;
+}
+.leftmenu ul li.current .menutip ul li a:hover span {
+    background: none repeat scroll 0 0 #F7F7F7;
+}
+.lefticon .mainleft {
+    width: 34px;
+}
+.lefticon .leftmenu {
+}
+.lefticon .leftmenu ul li {
+    width: 250px;
+}
+.lefticon .leftmenu ul li a {
+    height: 32px;
+    width: 2px;
+}
+.lefticon .leftmenu ul li a span {
+    display: none;
+}
+.lefticon .maincontent {
+    margin-left: 45px;
+}
+#togglemenuleft {
+    border-top: 1px solid #EEEEEE;
+    margin-top: 20px;
+    text-align: center;
+}
+#togglemenuleft a {
+    background: url("../images/toggle.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    top: -13px;
+    width: 22px;
+}
+#togglemenuleft a.toggle {
+    background: url("../images/toggle.png") no-repeat scroll 0 -25px transparent;
+    text-align: left;
+}
+.maincontent {
+    margin: 0 310px 0 260px;
+}
+.maincontentinner {
+}
+.maintabmenu {
+    line-height: 21px;
+    list-style: none outside none;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+}
+.maintabmenu li {
+    display: inline-block;
+}
+.maintabmenu li a {
+    background: url("../images/titlebg.png") repeat-x scroll left top #EEEEEE;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px 2px 0 0;
+    color: #999999;
+    display: block;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    padding: 8px 20px 4px;
+    text-shadow: 1px 1px #F7F7F7;
+}
+.maintabmenu li a:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-color: #CCCCCC;
+    color: #666666;
+    text-decoration: none;
+    text-shadow: 1px 1px #E7E7E7;
+}
+.maintabmenu li.current a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #DDDDDD #DDDDDD #FFFFFF;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: block;
+}
+.maintabmenu li.current a:hover {
+    text-shadow: none;
+}
+.content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0 2px 2px 2px;
+    box-shadow: 1px 1px 2px #EEEEEE;
+    line-height: 21px;
+    margin-top: -1px;
+    padding: 20px;
+	height:499px;
+}
+.contenttitle {
+    background: none repeat scroll 0 0 #222222;
+    border-radius: 2px 2px 2px 2px;
+}
+.contenttitle h2 {
+    background-image: url("../images/icons/default/sprites.png");
+    background-position: -154px -443px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    padding: 0 0 0 10px;
+}
+.contenttitle h2 span {
+    background: none repeat scroll 0 0 #333333;
+    border-left: 1px solid #444444;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    margin-left: 25px;
+    padding: 6px 0 6px 10px;
+    text-shadow: 1px 1px #222222;
+}
+.contenttitle h2.inbox {
+    background-position: -82px -335px;
+}
+.contenttitle h2.table {
+    background-position: -82px -480px;
+}
+.contenttitle h2.form {
+    background-position: -154px -262px;
+}
+.contenttitle h2.chart {
+    background-position: -10px -227px;
+}
+.contenttitle h2.image {
+    background-position: -10px -408px;
+}
+.contenttitle h2.button {
+    background-position: -47px -443px;
+}
+.widgetlist {
+    list-style: none outside none;
+}
+.widgetlist li {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.widgetlist li a {
+    background-color: #BBBBBB;
+    background-position: center 20px;
+    background-repeat: no-repeat;
+    border-radius: 2px 2px 2px 2px;
+    color: #EEEEEE;
+    display: inline-block;
+    font-weight: bold;
+    padding: 85px 20px 20px;
+    text-align: center;
+    width: 80px;
+}
+.widgetlist li a:hover {
+    text-decoration: none;
+}
+.widgetlist li a.default {
+    background-color: #BBBBBB;
+}
+.widgetlist li a.hover {
+    background-color: #666666;
+}
+.widgetlist li a.events {
+    background-image: url("../images/icons/default/events.png");
+}
+.widgetlist li a.message {
+    background-image: url("../images/icons/default/message.png");
+}
+.widgetlist li a.upload {
+    background-image: url("../images/icons/default/image.png");
+}
+.stdtable {
+    width: 100%;
+}
+.stdtable .con0 {
+    background: none repeat scroll 0 0 #FCFCFC;
+}
+.stdtable .con1 {
+    background: none repeat scroll 0 0 #F9F9F9;
+}
+.stdtable th, .stdtable td {
+    line-height: 16px;
+    vertical-align: middle;
+}
+.stdtable thead th, .stdtable thead td {
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    padding: 5px 10px;
+}
+.stdtable tfoot th, .stdtable tfoot td {
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    padding: 5px 10px;
+}
+.stdtable thead th:first-child, .stdtable tfoot th:first-child, .stdtable thead td:first-child, .stdtable tfoot td:first-child {
+    border-left: 1px solid #DDDDDD;
+}
+.stdtable thead th.head0, .stdtable tfoot th.head0, .stdtable thead td.head0, .stdtable tfoot td.head0 {
+    background-color: #EEEEEE;
+}
+.stdtable thead th.head1, .stdtable tfoot th.head1, .stdtable thead td.head1, .stdtable tfoot td.head1 {
+    background-color: #DDDDDD;
+}
+.stdtable thead th.sorting, .stdtable thead td.sorting {
+    background-image: url("../images/sort_both.png");
+    background-position: right 3px;
+    background-repeat: no-repeat;
+}
+.stdtable thead th.sorting_asc, .stdtable thead td.sorting_asc {
+    background-image: url("../images/sort_asc.png");
+    background-position: right 4px;
+    background-repeat: no-repeat;
+}
+.stdtable thead th.sorting_desc, .stdtable thead td.sorting_desc {
+    background-image: url("../images/sort_desc.png");
+    background-position: right 4px;
+    background-repeat: no-repeat;
+}
+.stdtable thead td {
+    font-weight: bold;
+}
+.stdtable thead td.center {
+    text-align: center;
+}
+.stdtable tbody tr td {
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 8px 10px;
+}
+.stdtable tbody tr:last-child td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.stdtable tbody tr td:first-child {
+    border-left: 1px solid #DDDDDD;
+}
+.stdtable tbody tr td:last-child {
+    border-right: 1px solid #DDDDDD;
+}
+.stdtable tbody tr:hover td, .stdtable tbody tr.selected td {
+    background: none repeat scroll 0 0 #FFFCCC;
+    color: #333333;
+}
+.stdtable tbody tr.togglerow td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.stdtable tbody tr.togglerow:hover td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.stdtable tbody tr.hiderow {
+    display: none;
+}
+.tableoptions {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/titlebg.png") repeat-x scroll left top #EEEEEE;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-right: 1px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    padding: 8px;
+}
+.tableoptions button {
+    background: url("../images/titlebg.png") repeat-x scroll left top #FCFCFC;
+    border: 1px solid #BBBBBB;
+    box-shadow: 1px 1px 2px #DDDDDD;
+    color: #666666;
+    font-size: 11px;
+    margin: 0;
+    outline: medium none;
+    padding: 7px 10px;
+}
+.tableoptions button:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    cursor: pointer;
+}
+.tableoptions select {
+    background: url("../images/titlebg.png") repeat-x scroll left top #FCFCFC;
+    border: 1px solid #BBBBBB;
+    box-shadow: 1px 1px 2px #DDDDDD;
+    color: #666666;
+    font-size: 11px;
+    margin: 0;
+    outline: medium none;
+    padding: 6px 5px 7px;
+}
+.dataTables_wrapper {
+    position: relative;
+}
+.dataTables_length, .dataTables_paginate {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/titlebg.png") repeat-x scroll left top #EEEEEE;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-right: 1px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    padding: 8px;
+}
+.dataTables_wrapper select {
+    background: url("../images/titlebg.png") repeat-x scroll left top #FCFCFC;
+    border: 1px solid #BBBBBB;
+    box-shadow: 1px 1px 2px #DDDDDD;
+    color: #666666;
+    font-size: 11px;
+    margin: 0;
+    outline: medium none;
+    padding: 5px;
+}
+.dataTables_wrapper input {
+    border: 1px solid #CCCCCC;
+    padding: 6px 5px 7px;
+    width: 200px;
+}
+.dataTables_filter {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.dataTables_info {
+    bottom: 13px;
+    left: 8px;
+    position: absolute;
+}
+.dataTables_paginate {
+    line-height: 16px;
+    text-align: right;
+}
+.dataTables_paginate span {
+    display: inline-block;
+}
+.dataTables_paginate .paginate_button {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #DDDDDD;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px 7px;
+}
+.dataTables_paginate .paginate_active {
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #222222;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px 7px;
+}
+.dataTables_paginate .paginate_button:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    cursor: pointer;
+}
+#external-events p {
+    font-size: 11px;
+}
+.external-event {
+    background: none repeat scroll 0 0 #C3E1FF;
+    border-radius: 2px 2px 2px 2px;
+    color: #333333;
+    cursor: move;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+.fc-header-left span.fc-state-active {
+    background: none repeat scroll 0 0 #444444;
+    border: 1px solid #333333;
+    color: #FFFFFF;
+}
+.fc-header-title {
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 18px;
+}
+.fc-header-title h2 {
+    font-size: 24px;
+}
+.fc-button-prev:hover, .fc-button-next:hover {
+    background: none repeat scroll 0 0 #444444;
+    border-color: #333333;
+    color: #FFFFFF;
+}
+.fc-button-today:hover {
+    background: none repeat scroll 0 0 #444444;
+    border-color: #333333;
+    color: #FFFFFF;
+}
+.stdform p, .stdform div.par {
+    margin: 15px 0;
+}
+.stdform div.par {
+    overflow: hidden;
+}
+.stdform span.field, .stdform div.field {
+    display: block;
+    margin-left: 220px;
+    position: relative;
+}
+.stdform .formwrapper {
+    display: block;
+    line-height: 25px;
+    margin-left: 220px;
+    padding-top: 5px;
+}
+.stdform label {
+    float: left;
+    padding: 5px 20px 0 0;
+    text-align: right;
+    width: 200px;
+}
+.stdform label.error {
+    color: #FF6600;
+    display: block;
+    float: none;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+}
+.stdform input {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #DDDDDD inset;
+    color: #666666;
+    padding: 8px 5px;
+    width: 315px;
+}
+.stdform input:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 1px 1px 2px #EEEEEE inset;
+}
+.stdform .smallinput {
+    width: 40%;
+}
+.stdform .mediuminput {
+    width: 60%;
+}
+.stdform .longinput {
+    width: 80%;
+}
+.stdform input.error {
+    border: 1px solid #FF6600;
+}
+.stdform input[type="radio"], .stdform input[type="checkbox"] {
+    margin: 0;
+    vertical-align: middle;
+    width: auto;
+}
+.stdform input[type="submit"] {
+    background: none repeat scroll 0 0 #333333;
+    border: 0 none;
+    box-shadow: none;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    padding: 7px 10px;
+    width: auto;
+}
+.stdform input[type="reset"] {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    box-shadow: none;
+    color: #666666;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+    padding: 7px 10px;
+    width: auto;
+}
+.stdform input[type="submit"]:hover {
+    background: none repeat scroll 0 0 #FFDD00;
+    color: #333333;
+}
+.stdform input[type="reset"]:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    color: #333333;
+    cursor: pointer;
+}
+.stdform textarea {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #DDDDDD inset;
+    color: #666666;
+    padding: 8px 5px;
+}
+.stdform textarea.error {
+    border: 1px solid #FF6600;
+}
+.stdform select {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #DDDDDD inset;
+    color: #666666;
+    min-width: 40%;
+    padding: 7px 5px;
+}
+.stdform select.error {
+    border: 1px solid #FF6600;
+}
+.stdform textarea:focus, .stdform select:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 1px 1px 2px #EEEEEE inset;
+}
+.stdform button {
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 7px 10px;
+}
+.stdform button:hover {
+    background: none repeat scroll 0 0 #111111;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+.stdform button.cancel {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DDDDDD;
+    color: #666666;
+}
+.stdform button.cancel:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+}
+.stdform small.desc {
+    color: #999999;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    margin: 5px 0 0 220px;
+}
+.stdform .stdformbutton {
+    margin-left: 220px;
+}
+.stdform2 p, .stdform2 div.par {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FCFCFC;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    margin: 0;
+}
+.stdform2 div.terms {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.stdform2 p:first-child, .stdform2 div.par:first-child {
+    border-top: 1px solid #DDDDDD;
+}
+.stdform div.par {
+    overflow: hidden;
+}
+.stdform2 label {
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+.stdform2 label.error {
+    margin-left: 0;
+    padding: 0;
+}
+.stdform2 label small {
+    color: #999999;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 16px;
+}
+.stdform2 span.field, .stdform2 div.field {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #DDDDDD;
+    display: block;
+    margin-left: 220px;
+    padding: 20px;
+}
+.stdform2 .stdformbutton {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-left: 0;
+    padding: 20px;
+}
+.dualselect {
+    display: block;
+    margin-left: 220px;
+}
+.dualselect select {
+    height: 200px;
+    width: 40%;
+}
+.dualselect .ds_arrow {
+    display: inline-block;
+    margin: 0 10px;
+    padding-top: 60px;
+    vertical-align: top;
+}
+.dualselect .ds_arrow .ds_prev, .dualselect .ds_arrow .ds_next {
+    background: url("../images/titlebg.png") repeat-x scroll left top #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 10px 7px;
+}
+.dualselect .ds_arrow .ds_prev:hover, .dualselect .ds_arrow .ds_next:hover {
+    background: none repeat scroll 0 0 #444444;
+    border-color: #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.quickform {
+    margin: 10px;
+}
+.quickform p {
+    margin: 10px 0;
+}
+.quickform label {
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100px;
+}
+.quickform .smallinput {
+    width: 60px;
+}
+.quickform .action {
+    margin-left: 120px;
+}
+.mainright {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+.mainrightinner {
+    margin-bottom: 20px;
+}
+.widgetbox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #EEEEEE;
+    margin-bottom: 10px;
+}
+.widgetbox .title {
+    background: none repeat scroll 0 0 #222222;
+    border-radius: 2px 2px 0 0;
+}
+.widgetbox .title h2 {
+    background-image: url("../images/icons/default/sprites.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    padding: 0 0 0 10px;
+}
+.widgetbox .title h2 span {
+    background: none repeat scroll 0 0 #333333;
+    border-left: 1px solid #444444;
+    border-radius: 0 2px 0 0;
+    display: block;
+    margin-left: 25px;
+    padding: 6px 0 6px 10px;
+    text-shadow: 1px 1px #222222;
+}
+.widgetbox .widgetcontent {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    border-radius: 0 0 2px 2px;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    line-height: 21px;
+    padding: 10px;
+}
+.widgetcontent ul.linklist {
+    list-style: none outside none;
+}
+.widgetcontent ul.linklist li {
+    border-bottom: 1px dotted #DDDDDD;
+    padding: 1px 0;
+}
+.widgetcontent ul.linklist li a {
+    color: #666666;
+    display: block;
+    padding: 2px 5px;
+}
+.widgetcontent ul.linklist li a:hover {
+    background: none repeat scroll 0 0 #F7F7F7;
+    text-decoration: none;
+}
+.widgetbox .titlehover h2 span {
+    background: url("../images/icons/arrow.png") no-repeat scroll right center #333333;
+}
+.widgetbox .widgettoggle {
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+}
+.widgetbox .title h2.chart {
+    background-position: -10px -227px;
+}
+.widgetbox .title h2.calendar {
+    background-position: -82px -155px;
+}
+.widgetbox .title h2.tabbed {
+    background-position: -190px -443px;
+}
+.widgetbox .title h2.general {
+    background-position: -154px -443px;
+}
+.widgetbox .title h2.chat {
+    background-position: -82px -299px;
+}
+.widgetbox .listthumb {
+    list-style: none outside none;
+    margin: 0;
+}
+.widgetbox .listthumb li {
+    margin: 8px 0;
+    padding: 0;
+}
+.widgetbox .listthumb img {
+    vertical-align: middle;
+}
+.widgetbox .thumb {
+    list-style: none outside none;
+    margin: 0;
+}
+.widgetbox .thumb li {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0;
+}
+.widgetbox .widgetoptions {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    padding: 5px;
+    position: relative;
+}
+.widgetbox .widgetoptions a {
+    background: url("../images/titlebg.png") repeat-x scroll left top #F7F7F7;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 0 #FFFFFF;
+    color: #333333;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+.widgetbox .widgetoptions a:hover {
+    border: 1px solid #BBBBBB;
+    box-shadow: 0 0 3px #CCCCCC;
+    text-decoration: none;
+}
+.widgetbox .widgetoptions .right {
+    float: right;
+}
+.analytics2 {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    text-align: center;
+}
+.analytics small {
+    color: #006699;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.analytics h1 {
+    color: #333333;
+    font-size: 24px;
+    margin: 2px 0;
+}
+.analytics h2 {
+    color: #333333;
+    font-size: 18px;
+    text-align: center;
+}
+.analytics h3 {
+    color: #333333;
+    font-size: 16px;
+}
+.wysiwyg-dialog-content input.submit, .ui-dialog .wysiwyg input.submit {
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #333333;
+    border-radius: 2px 2px 2px 2px;
+    color: #CCCCCC;
+    cursor: pointer;
+    font-weight: bold;
+}
+.wysiwyg-dialog-content input.submit:hover, .ui-dialog .wysiwyg input.submit:hover {
+    background: none repeat scroll 0 0 #FFDD00;
+    border: 1px solid #FF9900;
+    color: #333333;
+}
+.wysiwyg-dialog-content input.reset, .ui-dialog .wysiwyg input.reset {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-radius: 2px 2px 2px 2px;
+    color: #666666;
+    cursor: pointer;
+    font-weight: bold;
+}
+.wysiwyg-dialog-content input.reset:hover, .ui-dialog .wysiwyg input.reset:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+.notifyMessage {
+    display: none;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 7px 10px;
+}
+.notifySuccess {
+    background: none repeat scroll 0 0 #EFFEB9;
+    border: 1px solid #C1D779;
+    display: block;
+}
+.notifyError {
+    background: none repeat scroll 0 0 #FAD5CF;
+    border: 1px solid #E18B7C;
+    display: block;
+}
+.wizard .hormenu {
+    list-style: none outside none;
+}
+.wizard .hormenu li {
+    float: left;
+    width: 33%;
+}
+.wizard .hormenu li a {
+    display: block;
+}
+.wizard .hormenu li a:hover {
+    text-decoration: none;
+}
+.wizard .hormenu li a span.h2 {
+    color: #999999;
+    display: block;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.wizard .hormenu li a span.dot {
+    background: url("../images/stepline.png") repeat-x scroll left center transparent;
+    display: block;
+    height: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+.wizard .hormenu li span.label {
+    color: #999999;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.wizard .hormenu li a span.dot span {
+    background: url("../images/steps.png") no-repeat scroll 0 -40px transparent;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+.wizard .hormenu li:first-child a span.dot {
+    margin-left: 45%;
+    text-align: left;
+}
+.wizard .hormenu li:last-child a span.dot {
+    margin-right: 45%;
+    text-align: right;
+}
+.wizard .hormenu li a.done span.h2, .wizard .hormenu li a.done span.label {
+    color: #333333;
+}
+.wizard .hormenu li a.done span.dot span {
+    background-position: 0 -20px;
+}
+.wizard .hormenu li:first-child a.done span.dot span {
+    background-position: 0 0;
+}
+.wizard .hormenu li a.selected span.dot span {
+    background-position: 0 -120px;
+}
+.wizard .hormenu li:first-child a.selected span.dot span {
+    background-position: 0 -100px;
+}
+.wizard .hormenu li a.selected span.h2, .wizard .hormenu li a.selected span.label {
+    color: #333333;
+}
+.wizard .tabbedmenu {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #DDDDDD;
+    list-style: none outside none;
+    padding: 10px 10px 0;
+}
+.wizard .tabbedmenu li {
+    bottom: -1px;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+}
+.wizard .tabbedmenu li a {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DDDDDD;
+    color: #999999;
+    display: block;
+    padding: 10px 20px;
+}
+.wizard .tabbedmenu li a {
+    border-radius: 2px 2px 2px 2px;
+}
+.wizard .tabbedmenu li a span {
+    font-weight: bold;
+}
+.wizard .tabbedmenu li a span.h2 {
+    color: #999999;
+    display: block;
+    font-family: 'BebasNeueRegular',Arial,Helvetica,sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+.wizard .tabbedmenu li a:hover {
+    text-decoration: none;
+}
+.wizard .tabbedmenu li a.selected, .wizard .tabbedmenu li a.done {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    color: #333333;
+}
+.wizard .tabbedmenu li a.selected span.h2, .wizard .tabbedmenu li a.selected span {
+    color: #333333;
+}
+.wizard .tabbedmenu li a.done span.h2, .wizard .tabbedmenu li a.done span {
+    color: #333333;
+}
+.stepContainer .content {
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    padding: 0;
+}
+.stepContainer .content p {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DDDDDD #DDDDDD -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+}
+.stepContainer .content p:last-child {
+    border-bottom: 1px solid #DDDDDD;
+}
+.stepContainer .par p {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 10px 0;
+    padding: 0;
+}
+.stepContainer .par p:last-child {
+    border-bottom: 0 none;
+}
+
+.actionBar {
+  bottom: 65px;
+  clear: both;
+  padding: 10px 0;
+  position: absolute;
+  right: 30px;
+  z-index:99999;
+}
+
+.actionBar .loader {
+    display: none;
+    float: left;
+}
+.actionBar a {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 2px 2px 2px 2px;
+    color: #EEEEEE;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px 15px;
+    text-shadow: 1px 1px #111111;
+}
+.actionBar a:hover {
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: none;
+}
+.actionBar a.buttonDisabled {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #666666;
+    text-shadow: 1px 1px #DDDDDD;
+}
+.actionBar a.buttonDisabled:hover {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #666666;
+    cursor: default;
+    text-shadow: 1px 1px #DDDDDD;
+}
+.actionBar .msgBox {
+    margin: 40px 0 10px;
+    position: relative;
+}
+
+
+.finish {
+  font-size: 23px;
+  height: 45px !important;
+  left: -154px !important;
+  line-height: 45px !important;
+  position: absolute !important;
+  text-align: center !important;
+  top: -52px !important;
+  width: 285px !important;
+}
+
+
+.actionBar .msgBox .content {
+    background: none repeat scroll 0 0 #FFFCCC;
+    border: 1px solid #FEEA7A;
+    color: #333333;
+    padding: 7px 10px;
+}
+.actionBar .msgBox .close {
+    background: none repeat scroll 0 0 transparent;
+    border-radius: 1px 1px 1px 1px;
+    color: #333333;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding: 0 2px 2px;
+    position: absolute;
+    right: 7px;
+    text-shadow: none;
+    text-transform: lowercase;
+    top: 5px;
+}
+.actionBar .msgBox .close:hover {
+    background: none repeat scroll 0 0 #333333;
+    color: #EEEEEE;
+}
+.verwizard .verticalmenu {
+    float: left;
+    list-style: none outside none;
+    width: 180px;
+}
+.verwizard .verticalmenu li {
+    margin-bottom: 2px;
+}
+.verwizard .verticalmenu a {
+    color: #999999;
+    display: block;
+    padding: 5px;
+}
+.verwizard .verticalmenu a:hover {
+    text-decoration: none;
+}
+.verwizard .verticalmenu a.selected {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+}
+.verwizard .verticalmenu a.done {
+    background: none repeat scroll 0 0 #333333;
+    color: #AAAAAA;
+}
+.verwizard .verticalmenu a span {
+    font-weight: bold;
+}
+.verwizard .stepContainer {
+    margin-left: 200px;
+}
+.verwizard .actionBar {
+    margin: 10px 0 0 200px;
+}
+.imagelist {
+    list-style: none outside none;
+}
+.imagelist li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #EEEEEE;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 5px;
+}
+.imagelist li img {
+    display: block;
+    margin-bottom: 10px;
+}
+.imagelist li span {
+    display: block;
+    text-align: right;
+}
+.imagelist li span a {
+    vertical-align: middle;
+}
+.imagelist li span a.name {
+    color: #999999;
+    float: left;
+    font-weight: bold;
+}
+.imagelist li span a.name:hover {
+    color: #333333;
+    text-decoration: none;
+}
+.imagelist li span a.edit, .imagelist li span a.view, .imagelist li span a.delete {
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin-left: 5px;
+    opacity: 0.5;
+    vertical-align: middle;
+    width: 16px;
+}
+.imagelist li span a.edit:hover, .imagelist li span a.view:hover, .imagelist li span a.delete:hover {
+    opacity: 1;
+}
+.imagelist li span a.edit {
+    background: url("../images/icons/default/editor.png") repeat scroll 0 0 transparent;
+}
+.imagelist li span a.view {
+    background: url("../images/icons/default/glass.png") repeat scroll 0 0 transparent;
+}
+.imagelist li span a.delete {
+    background: url("../images/icons/default/trash.png") repeat scroll 0 0 transparent;
+}
+.photoEdit {
+    width: 480px;
+}
+.colorselector {
+    display: inline-block;
+    height: 28px;
+    margin-left: 5px;
+    position: relative;
+    vertical-align: middle;
+}
+.colorselector span {
+    background: url("../../images/colorpicker/select2.png") no-repeat scroll -4px -4px #000000;
+    display: block;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+.notification {
+    border-radius: 2px 2px 2px 2px;
+    height: 51px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.notification p {
+    color: #333333;
+    font-size: 13px;
+    margin: 14px 10px 0 75px;
+}
+.notification a.close {
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    height: 14px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 14px;
+}
+.notification a.close:hover {
+    cursor: pointer;
+}
+.msgalert a.close {
+    background-position: -14px 0;
+}
+.msgalert a.close:hover {
+    background-position: -14px -14px;
+}
+.msginfo a.close {
+    background-position: -42px 0;
+}
+.msginfo a.close:hover {
+    background-position: -42px -14px;
+}
+.msgsuccess a.close {
+    background-position: -28px 0;
+}
+.msgsuccess a.close:hover {
+    background-position: -28px -14px;
+}
+.msgerror a.close {
+    background-position: 0 0;
+}
+.msgerror a.close:hover {
+    background-position: 0 -14px;
+}
+.msgalert {
+    background: url("../images/notifications.png") no-repeat scroll 0 -52px #FFE9AD;
+    border: 1px solid #EAC572;
+}
+.msginfo {
+    background: url("../images/notifications.png") no-repeat scroll 0 -156px #D1E4F3;
+    border: 1px solid #99C4EA;
+}
+.msgsuccess {
+    background: url("../images/notifications.png") no-repeat scroll 0 -104px #EFFEB9;
+    border: 1px solid #C1D779;
+}
+.msgerror {
+    background: url("../images/notifications.png") no-repeat scroll 0 0 #FAD5CF;
+    border: 1px solid #E18B7C;
+}
+.button_alert {
+    background-image: url("../images/icons/default/alert.png");
+}
+.anchorbutton {
+    background-color: #F7F7F7;
+    background-position: 7px center;
+    background-repeat: no-repeat;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #E7E7E7;
+    color: #333333;
+    display: inline-block;
+}
+.anchorbutton:hover {
+    text-decoration: none;
+}
+.anchorbutton span {
+    background-color: #FFFFFF;
+    border-left: 1px solid #DDDDDD;
+    display: block;
+    margin-left: 30px;
+    padding: 5px 10px;
+}
+.buttonlist {
+    list-style: none outside none;
+}
+.buttonlist li {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+a.btn {
+    background-color: #F7F7F7;
+    background-image: url("../images/icons/default/sprites.png");
+    background-repeat: no-repeat;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 2px #EEEEEE;
+    color: #666666;
+    display: inline-block;
+    font-weight: bold;
+}
+a.btn:hover {
+    box-shadow: 1px 1px 5px #DDDDDD;
+    color: #333333;
+    text-decoration: none;
+}
+a.btn span {
+    background: url("../images/buttonbg.png") repeat-x scroll 0 -31px #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    display: block;
+    margin-left: 35px;
+    padding: 5px 10px;
+    text-shadow: 1px 1px #FFFFFF;
+}
+a.btn2 {
+    border-radius: 50px 50px 50px 50px;
+}
+a.btn2 span {
+    border-radius: 0 50px 50px 0;
+    padding-right: 15px;
+}
+a.btn3 {
+    height: 32px;
+    width: 34px;
+}
+a.btn4 {
+    border-radius: 50px 50px 50px 50px;
+    height: 32px;
+    width: 34px;
+}
+a.btn_search {
+    background-position: -10px -12px;
+}
+a.btn_trash {
+    background-position: -47px -12px;
+}
+a.btn_flag {
+    background-position: -82px -12px;
+}
+a.btn_home {
+    background-position: -119px -12px;
+}
+a.btn_link {
+    background-position: -154px -12px;
+}
+a.btn_book {
+    background-position: -190px -12px;
+}
+a.btn_mail {
+    background-position: -10px -47px;
+}
+a.btn_help {
+    background-position: -47px -47px;
+}
+a.btn_rss {
+    background-position: -82px -47px;
+}
+a.btn_archive {
+    background-position: -119px -47px;
+}
+a.btn_info {
+    background-position: -154px -47px;
+}
+a.btn_bell {
+    background-position: -190px -47px;
+}
+a.btn_world {
+    background-position: -10px -83px;
+}
+a.btn_bulb {
+    background-position: -47px -83px;
+}
+a.btn_cloud {
+    background-position: -82px -83px;
+}
+a.btn_clip {
+    background-position: -119px -83px;
+}
+a.btn_folder {
+    background-position: -154px -83px;
+}
+a.btn_lock {
+    background-position: -190px -83px;
+}
+a.btn_tag {
+    background-position: -10px -119px;
+}
+a.btn_note {
+    background-position: -47px -119px;
+}
+a.btn_key {
+    background-position: -82px -119px;
+}
+a.btn_stop {
+    background-position: -119px -119px;
+}
+a.btn_airplane {
+    background-position: -154px -119px;
+}
+a.btn_info2 {
+    background-position: -190px -119px;
+}
+a.btn_alarm {
+    background-position: -10px -155px;
+}
+a.btn_clock {
+    background-position: -47px -155px;
+}
+a.btn_calendar {
+    background-position: -82px -155px;
+}
+a.btn_basket {
+    background-position: -119px -155px;
+}
+a.btn_dollartag {
+    background-position: -154px -155px;
+}
+a.btn_cart {
+    background-position: -190px -155px;
+}
+a.btn_cart2 {
+    background-position: -10px -191px;
+}
+a.btn_user {
+    background-position: -47px -191px;
+}
+a.btn_users {
+    background-position: -82px -191px;
+}
+a.btn_male {
+    background-position: -119px -191px;
+}
+a.btn_female {
+    background-position: -154px -191px;
+}
+a.btn_refresh {
+    background-position: -190px -191px;
+}
+a.btn_chart {
+    background-position: -10px -227px;
+}
+a.btn_pie {
+    background-position: -47px -227px;
+}
+a.btn_address {
+    background-position: -82px -227px;
+}
+a.btn_zip {
+    background-position: -119px -227px;
+}
+a.btn_document {
+    background-position: -154px -227px;
+}
+a.btn_pdf {
+    background-position: -190px -227px;
+}
+a.btn_marker {
+    background-position: -10px -262px;
+}
+a.btn_sign {
+    background-position: -47px -262px;
+}
+a.btn_note {
+    background-position: -82px -262px;
+}
+a.btn_cut {
+    background-position: -119px -262px;
+}
+a.btn_pencil {
+    background-position: -154px -262px;
+}
+a.btn_paint {
+    background-position: -190px -262px;
+}
+a.btn_battery {
+    background-position: -10px -299px;
+}
+a.btn_battery2 {
+    background-position: -47px -299px;
+}
+a.btn_chat {
+    background-position: -82px -299px;
+}
+a.btn_chat2 {
+    background-position: -119px -299px;
+}
+a.btn_message {
+    background-position: -154px -299px;
+}
+a.btn_message2 {
+    background-position: -190px -299px;
+}
+a.btn_phone {
+    background-position: -10px -335px;
+}
+a.btn_call {
+    background-position: -47px -335px;
+}
+a.btn_inbox {
+    background-position: -82px -335px;
+}
+a.btn_inboxo {
+    background-position: -119px -335px;
+}
+a.btn_inboxi {
+    background-position: -154px -335px;
+}
+a.btn_bluetooth {
+    background-position: -190px -335px;
+}
+a.btn_wifi {
+    background-position: -10px -370px;
+}
+a.btn_settings {
+    background-position: -47px -370px;
+}
+a.btn_settings2 {
+    background-position: -82px -370px;
+}
+a.btn_settings3 {
+    background-position: -119px -370px;
+}
+a.btn_hd {
+    background-position: -154px -370px;
+}
+a.btn_hd2 {
+    background-position: -190px -370px;
+}
+a.btn_image {
+    background-position: -10px -408px;
+}
+a.btn_image2 {
+    background-position: -47px -408px;
+}
+a.btn_sound {
+    background-position: -82px -408px;
+}
+a.btn_media {
+    background-position: -119px -408px;
+}
+a.btn_mic {
+    background-position: -154px -408px;
+}
+a.btn_print {
+    background-position: -190px -408px;
+}
+a.btn_laptop {
+    background-position: -10px -443px;
+}
+a.btn_mouse {
+    background-position: -47px -443px;
+}
+a.btn_camera {
+    background-position: -82px -443px;
+}
+a.btn_video {
+    background-position: -119px -443px;
+}
+a.btn_grid {
+    background-position: -154px -443px;
+}
+a.btn_grid2 {
+    background-position: -190px -443px;
+}
+a.btn_list {
+    background-position: -10px -480px;
+}
+a.btn_list2 {
+    background-position: -47px -480px;
+}
+a.btn_table {
+    background-position: -82px -480px;
+}
+.stdbtn {
+    background: url("../images/buttons.png") repeat-x scroll left top #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    color: #333333;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 7px 10px;
+}
+.stdbtn:hover {
+    text-decoration: none;
+}
+.btn_yellow {
+    background-position: 0 -38px;
+    border-color: #EBB205;
+    color: #AE510D;
+}
+.btn_blue {
+    background-position: 0 -76px;
+    border-color: #0282CE;
+    color: #FFFFFF;
+}
+.btn_black {
+    background-position: 0 -114px;
+    border-color: #222222;
+    color: #FFFFFF;
+}
+.btn_lime {
+    background-position: 0 -152px;
+    border-color: #59BF04;
+    color: #367501;
+}
+.btn_orange {
+    background-position: 0 -190px;
+    border-color: #CD7A03;
+    color: #6E3C17;
+}
+.btn_red {
+    background-position: 0 -228px;
+    border-color: #A31314;
+    color: #FFFFFF;
+}
+.stdbtn:active {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+.btn_yellow:active {
+    background: none repeat scroll 0 0 #FFDE06;
+}
+.btn_blue:active {
+    background: none repeat scroll 0 0 #0591E5;
+}
+.btn_black:active {
+    background: none repeat scroll 0 0 #333333;
+}
+.btn_lime:active {
+    background: none repeat scroll 0 0 #6ADC0B;
+}
+.btn_orange:active {
+    background: none repeat scroll 0 0 #FF9702;
+}
+.btn_red:active {
+    background: none repeat scroll 0 0 #EB2F30;
+}
+.progress {
+    margin: 5px 0;
+}
+.progress .bar {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 50px 50px 50px 50px;
+    padding: 1px;
+}
+.progress .bar {
+    box-shadow: 2px 2px 3px #FFFFFF inset;
+}
+.progress .bar .value {
+    background-image: url("../images/progress.png");
+    border-radius: 50px 50px 50px 50px;
+    height: 5px;
+}
+.progress .bar2 {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    padding: 1px;
+}
+.progress .bar2 {
+    box-shadow: 2px 2px 3px #FFFFFF inset;
+}
+.progress .bar2 .value {
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    padding: 0;
+    text-align: center;
+}
+.progress .bar2 .value {
+    background-image: url("../images/progress.png");
+    background-position: 0 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+.progress .bluebar {
+    background-color: #0066FF;
+    box-shadow: 1px 1px 2px #99AAFF inset;
+}
+.progress .orangebar {
+    background-color: #FF9900;
+}
+.progress .redbar {
+    background-color: #CC0000;
+}
+.widgetgrid .widgetbox {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    vertical-align: top;
+}
+.announcement p {
+    color: #666666;
+    margin: 20px 0;
+}
+.announcement p:first-child {
+    margin-top: 0;
+}
+.announcement p:last-child {
+    margin-bottom: 0;
+}
+.announcement p span {
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 11px;
+    padding: 1px 10px;
+}
+.statement table td {
+    text-align: center;
+}
+.statement table tbody tr td:first-child, .statement table thead tr th:first-child {
+    border-left: 0 none;
+}
+.statement table tbody tr td:last-child, .statement table thead tr th:last-child {
+    border-right: 0 none;
+}
+.statement table tbody tr:hover td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.activitylist {
+    list-style: none outside none;
+}
+.activitylist li {
+    border-bottom: 1px solid #EEEEEE;
+    display: block;
+}
+.activitylist li a {
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    color: #666666;
+    display: block;
+    margin: 1px;
+    padding: 7px 5px 8px 40px;
+}
+.activitylist li a:hover {
+    background-color: #F7F7F7;
+    text-decoration: none;
+}
+.activitylist li a span {
+    color: #999999;
+    font-size: 10px;
+    line-height: 10px;
+}
+.activitylist li.message a {
+    background-image: url("../images/icons/default/mail.png");
+}
+.activitylist li.user a {
+    background-image: url("../images/icons/default/users.png");
+}
+.activitylist li.media a {
+    background-image: url("../images/icons/default/media.png");
+}
+.userlistwidget ul {
+    list-style: none outside none;
+}
+.userlistwidget ul li {
+    border-bottom: 1px dashed #DDDDDD;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 10px 0;
+}
+.userlistwidget ul li:first-child {
+    padding-top: 0;
+}
+.userlistwidget ul li:last-child {
+    border-bottom: 0 none;
+    padding-bottom: 0;
+}
+.userlistwidget ul li .avatar {
+    border: 1px solid #EEEEEE;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+}
+.userlistwidget ul li a {
+    font-weight: bold;
+}
+.userlistwidget .more {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #006699;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.userlistwidget .more:hover {
+    background: none repeat scroll 0 0 #E7E7E7;
+    text-decoration: none;
+}
+.stdformwidget label {
+    width: 80px;
+}
+.stdformwidget div.par {
+    margin: 13px 0 14px;
+}
+.stdformwidget div.field {
+    margin-left: 100px;
+}
+.contactlist {
+    list-style: none outside none;
+}
+.contactlist li {
+    border-top: 1px solid #EEEEEE;
+    padding: 1px;
+    position: relative;
+}
+.contactlist li:first-child {
+    border-top: 0 none;
+}
+.contactlist li span.msgcount {
+    background: none repeat scroll 0 0 #DD0000;
+    border-radius: 50px 50px 50px 50px;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding: 3px 5px;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+.contactlist li a {
+    color: #666666;
+    display: block;
+    padding: 8px 10px;
+}
+.contactlist li.online a {
+    background: url("../images/online.png") no-repeat scroll right 16px transparent;
+}
+.contactlist li.new a {
+    font-weight: bold;
+}
+.contactlist li a:hover {
+    background-color: #FCFCFC;
+    text-decoration: none;
+}
+.contactlist li a img {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.chatsearch {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    overflow: hidden;
+    padding: 5px;
+}
+.chatsearch input {
+    background: url("../images/search.png") no-repeat scroll left center #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: #CCCCCC;
+    float: left;
+    padding: 7px 5px 7px 35px;
+    width: 245px;
+}
+.chatsearch input:focus {
+    color: #333333;
+}
+.chatbottom {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-top: 1px solid #DDDDDD;
+    padding: 8px 10px;
+}
+.chatbottom a {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #DDDDDD;
+    color: #666666;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 10px;
+}
+.chatbottom a:hover {
+    border: 1px solid #BBBBBB;
+    box-shadow: 0 0 1px #DDDDDD;
+    text-decoration: none;
+}
+.chatcontent {
+    height: 500px;
+    padding: 0;
+    position: relative;
+}
+.chatcontent .messagebox {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-top: 1px solid #DDDDDD;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+}
+.chatcontent .messagebox input {
+    background: url("../images/icons/default/chat.png") no-repeat scroll 8px 8px #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    display: inline-block;
+    margin-left: 1%;
+    padding: 8px 5px 8px 30px;
+    width: 78.6%;
+}
+.chatcontent .messagebox input:focus {
+    box-shadow: 0 0 5px #EEEEEE;
+}
+.chatcontent .messagebox button {
+    background: none repeat scroll 0 0 #333333;
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 1%;
+    padding: 7px 0;
+    text-align: center;
+    width: 13%;
+}
+.chatcontent .messagebox button:hover {
+    background: none repeat scroll 0 0 #111111;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.chatmessage {
+    border: 1px solid #DDDDDD;
+    height: 425px;
+    margin: 10px;
+    overflow: auto;
+    position: relative;
+}
+#chatmessageinner {
+}
+#chatmessageinner p {
+    border-bottom: 1px dotted #DDDDDD;
+    padding: 10px;
+}
+.pagination {
+    list-style: none outside none;
+    overflow: hidden;
+}
+.pagination li {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.pagination li.first, .pagination li.previous, .pagination li.next, .pagination li.last {
+    font-size: 18px;
+}
+.pagination li a {
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+.pagination li a {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-radius: 2px 2px 2px 2px;
+}
+.pagination li a:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    cursor: pointer;
+    text-decoration: none;
+}
+.pagination li a.current {
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #272727;
+    color: #FFFFFF;
+}
+.pagination li.first a:active, .pagination li.previous a:active, .pagination li.next a:active, .pagination li.last a:active {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+}
+.pagination li a.disable {
+    color: #CCCCCC;
+}
+.pagination li a.disable:hover {
+    background: none repeat scroll 0 0 #F7F7F7;
+    cursor: default;
+}
+.pagination li a.disable:active {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+}
+.checkbox {
+    background: url("../images/checkbox.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+.checkbox input {
+    opacity: 0;
+}
+.radio {
+    background: url("../images/radio.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+.radio input {
+    opacity: 0;
+}
+.checked {
+    background-position: 0 -16px;
+}
+.errorWrapper {
+    margin: 80px auto 0;
+    text-align: center;
+    width: 700px;
+}
+.errorWrapper span {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: italic;
+    text-shadow: 1px 1px #555555;
+}
+.errorWrapper a {
+    background: none repeat scroll 0 0 #999999;
+    border-radius: 2px 2px 2px 2px;
+    color: #222222;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+.errorWrapper a.default {
+    background: none repeat scroll 0 0 #999999;
+    color: #222222;
+}
+.errorWrapper a.hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+}
+.errorWrapper a:hover {
+    text-decoration: none;
+}
+.pageErrorTitle {
+    color: #FFFFFF;
+    font-size: 56px;
+    text-shadow: 1px 1px #333333;
+}
+.breadcrumbs {
+    background: url("../images/titlebg.png") repeat-x scroll left top transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    list-style: none outside none;
+}
+.breadcrumbs li {
+    background: url("../images/separator.png") no-repeat scroll right center transparent;
+    display: inline-block;
+    font-size: 11px;
+    margin-right: 5px;
+}
+.breadcrumbs li:last-child {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+}
+.breadcrumbs li a {
+    display: block;
+    padding: 5px 20px 5px 5px;
+}
+.breadcrumbs li:first-child a {
+    padding-left: 10px;
+}
+.breadcrumbs2 {
+    background: none repeat scroll 0 0 transparent;
+}
+.footer {
+    font-size: 11px;
+    margin: 10px 0;
+}
+.center {
+    text-align: center;
+}
+.width50 {
+    width: 100px !important;
+}
+.block {
+    display: block;
+}
+.margintop10 {
+    margin-top: 10px;
+}
+.textright {
+    text-align: right;
+}
+.tooltipflot {
+    background: url("../images/blacktrans.png") repeat scroll 0 0 transparent;
+    color: #EEEEEE;
+    font-size: 11px;
+    padding: 5px 10px;
+}
+.noright {
+    margin-right: 0;
+}
+.radiusbottom0 {
+    border-radius: 2px 2px 0 0;
+}
+.padding0 {
+    padding: 0 !important;
+}
+.width100 {
+    width: 100px !important;
+}
+#popwizard {
+    padding: 20px;
+}
+#popwizard .stepContainer {
+    height: 268px !important;
+}
+#popwizard .actionBar {
+    padding-top: 30px;
+}
+.pie {
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+    text-shadow: 1px 1px #444444;
+}
+.quickform .notifyMessage {
+    margin: 0 0 20px;
+}
+.stdform .vsmallinput {
+    width: 60px;
+}
+.borderTop0 {
+    border-top: 0 none;
+}
+.color333 {
+    color: #333333;
+}
+.floatleft {
+    float: left;
+}
+.loaders img {
+    display: inline-block;
+    margin-right: 10px;
+}
+.chartplace {
+    height: 150px;
+    margin-bottom: 10px;
+}
+.average {
+    border-top: 1px dashed #CCCCCC;
+    color: #006699;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.average h3 {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+.ui-datepicker-inline .ui-datepicker-calendar td a:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    color: #666666;
+    text-decoration: none;
+    text-shadow: none;
+}
+.ui-datepicker-inline .ui-datepicker-calendar td.ui-datepicker-today a {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+}
+.maincontent {
+    margin-left: 230px;
+    margin-right: 260px;
+}
+.mainright {
+    width: 250px;
+}
+.contenttitle, .widgetbox .title {
+    height: 32px;
+    overflow: hidden;
+}
+.contenttitle h2, .widgetbox .title h2 {
+    font-size: 16px;
+}
+.mainleft {
+    width: 220px;
+}
+.notification p {
+}
+.noright {
+    margin-right: 0;
+}
+.errorWrapper {
+    width: auto;
+}
+.chatcontent .messagebox input {
+    width: 74.3%;
+}
+.maincontent {
+    margin-right: 0;
+}
+.mainright {
+    margin-top: 10px;
+    position: relative;
+    width: auto;
+}
+.mainright .widgetbox {
+    float: left;
+    margin-right: 4%;
+    width: 48%;
+}
+.mainright .widgetbox:nth-child(2n) {
+    margin-right: 0;
+}
+.footer {
+    clear: both;
+}
+.searchbox input {
+    width: 150px;
+}
+.chatcontent .messagebox input {
+    width: 75%;
+}
+.imagelist li img {
+    width: 240px;
+}
+.floatright {
+    display: none;
+}
+#userPanel {
+    border-left: 0 none;
+}
+#searchPanel {
+    border-right: 0 none;
+}
+.imagelist li img {
+    width: 200px;
+}
+.stdform p, .stdform div.par {
+    background: none repeat scroll 0 0 transparent;
+}
+.stdform label {
+    display: block;
+    float: none;
+    text-align: left;
+    width: auto;
+}
+.stdform span.field, .stdform div.field, .dualselect, .stdform .formwrapper, .stdform .formwrapper {
+    margin-left: 0;
+}
+.stdform small.desc {
+    margin: 5px 0 0;
+}
+.stdform .stdformbutton {
+    margin-left: 0;
+}
+.stdform2 p, .stdform2 div.par {
+    background: none repeat scroll 0 0 transparent;
+}
+.stdform2 label {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-bottom: 1px solid #DDDDDD;
+    display: block;
+    float: none;
+    padding: 7px 10px;
+    width: auto;
+}
+.stdform2 span.field, .stdform2 div.field {
+    border-left: 0 none;
+    display: block;
+    margin-left: 0;
+}
+.verwizard .actionBar {
+    margin: 0;
+}
+.headerinner {
+    border-bottom: 1px solid #222222;
+}
+.tablewrapper {
+    overflow: auto;
+    width: 100%;
+}
+.mainright .widgetbox {
+    float: none;
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: auto;
+}
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+    display: block;
+    float: none;
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: auto;
+}
+.chartbox .one_half {
+    float: left;
+    margin-right: 3%;
+    width: 48.5%;
+}
+.searchbox input {
+    width: 200px;
+}
+.imagelist li {
+    margin: 0 10px 10px 0;
+}
+.imagelist li img {
+    width: 150px;
+}
+.imagelist li span a.name {
+    font-size: 11px;
+}
+.imagelist li span a.edit, .imagelist li span a.view, .imagelist li span a.delete {
+    display: none;
+}
+.fc-header-left {
+    font-size: 11px;
+}
+.fc-button, .fc-button-content {
+    height: auto;
+}
+.fc-button-month .fc-button-content, .fc-button-agendaWeek .fc-button-content, .fc-button-agendaDay .fc-button-content, .fc-button-today .fc-button-content {
+    padding: 2px 5px;
+}
+.fc-header-title h2 {
+    font-size: 14px;
+}
+.maintabmenu li a {
+    font-size: 16px;
+    padding: 8px 10px;
+}
+.verwizard .verticalmenu {
+    float: none;
+    font-size: 11px;
+    width: auto;
+}
+.verwizard .stepContainer {
+    margin-left: 0;
+    margin-top: 20px;
+}
+.wizard .tabbedmenu li a {
+    padding: 5px;
+}
+.wizard .tabbedmenu li a h2 {
+    font-size: 16px;
+}
+.wizard .tabbedmenu li a span {
+    font-size: 11px;
+    font-weight: normal;
+}
+.maincontent {
+    margin-right: 0;
+}
+.mainright .widgetbox {
+}
+.widgetlist li {
+    margin-right: 4%;
+    width: 48%;
+}
+.widgetlist li:nth-child(2n) {
+    margin-right: 0;
+}
+.widgetlist li a {
+    display: block;
+    width: auto;
+}
+.headerinner2 .searchbox {
+    border-right: 0 none;
+}
+.headerinner2 .searchbox input {
+    width: 150px;
+}
+.searchbox input {
+    width: 150px;
+}
+.stdtable td, .stdtable th {
+    font-size: 11px;
+}
+.chatcontent .messagebox input {
+    width: 70%;
+}
+.wizard .tabbedmenu li a {
+    padding: 10px 20px;
+}
+.wizard .tabbedmenu li a h2 {
+    font-size: 20px;
+}
+.wizard .tabbedmenu li a span {
+    display: none;
+}
+.widgetgrid .widgetbox {
+    display: block;
+    margin-right: 0;
+    width: auto !important;
+}
+body {
+    font-size: 11px;
+}
+button, input, select, textarea {
+    font-size: 11px;
+}
+.loginbox {
+    margin: 10px;
+    width: auto;
+}
+.loginbox input {
+    width: 95%;
+}
+.loginbox button {
+    width: 100%;
+}
+.userinfomenu .userinfo {
+    font-size: 11px;
+}
+.userdrop ul li a {
+    font-size: 11px;
+}
+.headerinner2 .searchbox input {
+    font-size: 11px;
+    width: 70px;
+}
+.notibox {
+    width: 250px;
+}
+.tabmenu li a, .widgetlist li a {
+    font-size: 11px;
+}
+.dataTables_wrapper input {
+    width: 70px;
+}
+.deletebutton {
+    display: none;
+}
+.tableoptions select {
+    padding: 2px;
+}
+.tableoptions button {
+    padding: 2px 5px;
+}
+.stdtablecb thead th:first-child, .stdtablecb tbody tr td:first-child {
+   
+}
+.flatmode {
+    display: none;
+}
+.vs2 {
+    margin-left: 0 !important;
+}
+.imagelist li img {
+    width: 210px;
+}
+.multipletabmenu li a {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    width: auto;
+}
+.dualselect select {
+}
+.dualselect .ds_arrow {
+    margin: 0;
+}
+.stdform button, .stdform input[type="reset"] {
+    padding: 5px;
+}
+.stdform2 span.field, .stdform2 div.field, .stdform2 .stdformbutton {
+    padding: 10px;
+}
+.stepContainer h2 {
+    font-size: 16px;
+}
+.fc-header-left, .fc-button-today {
+    display: none;
+}
+.fc-header-title h2 {
+    font-size: 20px;
+}
+.fc-header-center {
+    text-align: left;
+}
+.chatcontent .messagebox input {
+    width: 150px;
+}
+.chatcontent .messagebox button {
+    margin-left: 5px;
+    width: 60px;
+}
+.errorWrapper a {
+    display: block;
+    font-size: 12px;
+    margin-top: 0;
+    padding: 20px 0;
+}
+.errorWrapper span {
+    display: block;
+    margin-bottom: 20px;
+}
+.footer {
+    font-size: 10px;
+}
+
+

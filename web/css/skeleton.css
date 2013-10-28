@@ -1,0 +1,124 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .container					                { position: relative; width: 960px; margin: 0 auto; padding: 0;}
+    .column, .columns                           { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */	
+	.container .one.column						{ width: 60px;  }
+	.container .two.columns 					{ width: 140px; }
+	.container .three.columns 					{ width: 220px; }
+	.container .four.columns 					{ width: 300px; }
+	.container .five.columns 					{ width: 380px; }
+	.container .six.columns 					{ width: 460px; }
+	.container .seven.columns 					{ width: 540px; }
+	.container .eight.columns 					{ width: 620px; }
+	.container .nine.columns 					{ width: 700px; }
+	.container .ten.columns 					{ width: 780px; }
+	.container .eleven.columns 					{ width: 860px; }
+	.container .twelve.columns 					{ width: 940px; }
+
+    /* Offsets */
+	
+	.container .offset-by-one                	{ padding-left: 80px;  }
+    .container .offset-by-two                	{ padding-left: 160px; }
+    .container .offset-by-three              	{ padding-left: 240px; }
+    .container .offset-by-four               	{ padding-left: 320px; }
+    .container .offset-by-five               	{ padding-left: 400px; }
+    .container .offset-by-six                	{ padding-left: 480px; }
+    .container .offset-by-seven              	{ padding-left: 560px; }
+    .container .offset-by-eight              	{ padding-left: 640px; }
+    .container .offset-by-nine               	{ padding-left: 720px; }
+    .container .offset-by-ten                	{ padding-left: 800px; }
+    .container .offset-by-eleven             	{ padding-left: 880px; }
+	
+	/* Column Layouts */
+	.one_half, .one_third, .two_third, 
+	.three_fourth, .one_fourth, .one_fifth, 
+	.two_fifth, .three_fifth, .four_fifth, 
+	.one_sixth, .five_sixth						{margin-right: 2%; margin-left:2%; position:relative; float:left;}
+	
+	.one_half									{ width:48%; }
+	.one_third									{ width:30.6666%;}
+	.one_fourth									{ width:22%; }
+	.one_fifth									{ width: 16.8%;}
+	.one_sixth 									{ width: 13.3333%;}
+	
+	.two_third									{ width: 65.3332%;}
+	.two_fourth 								{ width: 48%;}
+	.two_fifth 									{ width: 37.6%;}
+	.two_sixth 									{ width: 30.6666%;}
+	
+	.three_fourth								{ width:74%;}
+	.three_fifth 								{ width: 58.4%;}
+	.three_sixth 								{ width: 47.9998%;}
+	
+	.four_fifth 								{ width: 79.2%;}
+	.four_sixth 								{ width: 65.3332%;}
+	
+	.five_sixth 								{ width: 82.6665%;}
+	.firstcols									{ margin-left:0px !important; }
+	.last, .lastcols							{ margin-right:0px !important; clear:right; }
+
+
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear, .clr {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

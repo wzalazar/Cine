@@ -1,0 +1,110 @@
+
+/***** GENERAL STYLES *****/
+body.login { background: #343e48 url(../images/bgmain.png); }
+body.errorpage { background-color: #4f5b68; }
+h1, h2, h3 { color: #283038; }
+
+/***** LOGIN PAGE *****/
+.loginbox { background: #3b4752; }
+.loginboxinner { 
+	background: #3b4650; border: 1px solid #343e47; -moz-box-shadow: inset 0 1px 0 #424f5b; 
+	-webkit-box-shadow: inset 0 1px 0 #424f5b; box-shadow: inset 0 1px 0 #424f5b;
+}
+.loginbox h1 { color: #4b6178; text-shadow: 1px 1px #202d3c; }
+.loginbox input { 
+	background: #283038 url(../images/loginputbg.blue.png) repeat-x top left; color: #ccc;  
+	-moz-box-shadow: 0 1px 0 #47515a; -webkit-box-shadow: 0 1px 0 #47515a; box-shadow: 0 1px 0 #47515a; outline: none; 
+}
+.loginbox button { 
+	background: #4b6178; color: #a3b8cd; -moz-box-shadow: 1px 1px 1px #333; -webkit-box-shadow: 1px 1px 1px #333; box-shadow: 1px 1px 1px #333; 
+}
+.loginbox button.default { background: #4b6178; color: #a3b8cd; }
+.loginbox button.hover { background: #384d63; color: #fff; }
+.loginbox button:active { background: #4b6178; color: #fff; }
+
+/***** HEADER STYLES *****/
+.header { 
+	background: #313a43 url(../images/headbg.blue.png) repeat-x top left; border: 1px solid #2c363e; 
+	-moz-box-shadow: 1px 1px 3px #333; -webkit-box-shadow: 1px 1px 3px #333; box-shadow: 1px 1px 3px #333; 
+}
+.headercolumn { border-right: 1px solid #2c363e; border-left: 1px solid #404d58; } 
+.searchbox input { 
+	background: #283038 url(../images/loginputbg.blue.png) repeat-x top left; 
+	-moz-box-shadow: 0 1px 0 #404d58; -webkit-box-shadow: 0 1px 0 #404d58; box-shadow: 0 1px 0 #404d58;
+}
+.headright .userinfo { 
+	border: 1px solid #283038; background-color: #283038;
+	-moz-box-shadow: 0 1px 0 #404d58; -webkit-box-shadow: 0 1px 0 #404d58; box-shadow: 0 1px 0 #404d58;
+}
+.headright .userinfo:hover { border: 1px solid #283038; background-color: #363f49; }
+.headright .userinfodrop { 
+	background: #fff url(../images/arrow2.png) no-repeat right -87px; color: #333; border: 1px solid #fff; height: 29px; 
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+.headright .userinfodrop:hover { background-color: #fff; color: #333; border: 1px solid #fff; }
+
+.userinfomenu .userinfo { display: inline-block; border: 1px solid #1f262d; background-color: #283038; }
+.userinfomenu .userinfo:hover { text-decoration: none; border: 1px solid #1f262d; background-color: #363f49; }
+.userinfomenu .userinfo span { display: inline-block; padding: 0 10px; }
+
+.userinfomenu .userinfodrop { 
+	background: #fff url(../images/arrow2.png) no-repeat right -87px; color: #333; z-index: 20; border: 1px solid #ccc; 
+	border-bottom: 0; height: 29px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+.userinfomenu .userinfodrop:hover { background-color: #fff; color: #333; border: 1px solid #ccc; border-bottom: 0; }
+
+
+/***** LEFT MENU STYLES *****/
+.leftmenu ul li.current a { background-color: #283038; border: 1px solid #2c363e; border-bottom: 0; }
+.leftmenu ul li.current a span { background-color: #3b4650; border-left: 1px solid #404d58; }
+.leftmenu ul li.current a.active { background-color: #283038; border: 1px solid #2c363e; }
+.leftmenu ul li.current a.active span { background-color: #3b4650; border-left: 1px solid #404d58; }
+.leftmenu ul li.current a.menudrop:hover span { background-color: #3b4650; }
+.leftmenu ul li.current ul li a { border-bottom: 1px solid #2c363e; }
+.leftmenu ul li.current ul li a:hover span { background: #37414b; }
+
+/***** WIDGET LIST *****/
+/***** dashboard.html *****/
+.widgetlist li a.default { background-color: #bbb; }
+.widgetlist li a.hover { background-color: #283038; }
+
+/***** WIDGET BOX *****/
+.widgetbox .title { background-color: #283038; }
+.widgetbox .title h2 span { background-color: #3b4650; border-left: 1px solid #404d58; }
+.contenttitle { background-color: #283038; }
+.contenttitle h2 span { background-color: #3b4650; border-left: 1px solid #404d58; }
+
+/***** FORM STYLES *****/
+.stdform button { background-color: #3b4650; }
+.stdform button:hover { background-color: #283038; }
+
+/***** CALENDARD STYLES *****/
+.ui-datepicker-inline .ui-datepicker-calendar td.ui-datepicker-today a { background-color: #3b4650; }
+
+/***** MAIN CONTENT STYLES *****/
+.maintabmenu li.current a { color: #3b4650; }
+
+/***** TABLE STYLES *****/
+.dataTables_paginate .paginate_active { background-color: #283038; }
+
+/***** ELEMENT STYLES *****/
+.pagination li a.current { background-color: #283038; }
+
+/***** WIZARD STYLES *****/
+.actionBar a { background-color: #3b4650; }
+.actionBar a:hover { background-color: #283038; }
+.wizard .hormenu li a.selected h2, .wizard .hormenu li a.selected span.label { color: #3b4650; }
+.verwizard .verticalmenu a.selected { background-color: #3b4650; }
+.verwizard .verticalmenu a.done { background-color: #283038; }
+
+/***** AUTO COMPLETE *****/
+.ui-menu { background: #283038; }
+.ui-menu .ui-menu-item a { border-bottom: 1px solid #1a2027; }
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active { background: #3c4a58; }
+
+@media screen and (max-width: 580px) {
+	.headerinner { border-bottom: 1px solid #1f262d; }
+	.headerinner2 { border-top: 1px solid #3f4954; }
+	.headercolumn {  }
+}
