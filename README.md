@@ -1,4 +1,4 @@
-cine
+Cine
 ====
 
 Sistema basado en Java jsp
