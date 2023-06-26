@@ -9,5 +9,8 @@ package Entidades;
  * @author Kevin Magallanes
  */
 public interface idPelicula {
-    
+     public int getIdPelicula();
+    public void setIdPelicula(int idPelicula); 
+    public String getTitulo();
+    public void setTitulo(String titulo); 
 }

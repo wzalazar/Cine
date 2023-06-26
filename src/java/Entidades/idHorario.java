@@ -4,10 +4,15 @@
  */
 package Entidades;
 
+import java.sql.Time;
+
 /**
  *
  * @author Kevin Magallanes
  */
 public interface idHorario {
-    
+    public Time getIdHorario();
+    public void setIdHorario(Time horario); 
+    public double getPrecio();
+    public void setPrecio(Double precio); 
 }

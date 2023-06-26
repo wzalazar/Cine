@@ -9,5 +9,9 @@ package Entidades;
  * @author Kevin Magallanes
  */
 public interface idSala {
+     public int getIdSala();
+    public void setIdSala(int idSala); 
+    public String getNombre();
+    public void setNombre(String nombre); 
     
 }
